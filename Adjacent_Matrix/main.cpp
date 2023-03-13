@@ -58,13 +58,13 @@ void Init() {
 
 int main() {
 	Init();
-	cout << "广度优先搜索:" << endl;
+	cout << "BFS:" << endl;
 	for (int i = 1; i <= n; i++) {
 		if (!visit[i]) BFS(i);
 	}
 	putchar(10);
 	memset(visit, false, n);
-	cout << "深度优先搜索" << endl;
+	cout << "DFS" << endl;
 	for (int i = 1; i <= n; i++) {
 		if (!visit[i]) DFS(i);
 	}
